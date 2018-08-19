@@ -6,11 +6,13 @@ let catTwoCounter = document.querySelector('.clicks-two');
 let imgOne = document.getElementById('img-one');
 imgOne.addEventListener('click', function(){
   catClicksOne++;
+  catOneCounter.innerText = catClicksOne;
   console.log('Second cat picture clicked ' + catClicksOne + ' times.');
 },false);
 
 let imgTwo = document.getElementById('img-two');
 imgTwo.addEventListener('click', function(){
   catClicksTwo++;
+  catOneCounter.innerText = catClicksTwo;
   console.log('Second cat picture clicked ' + catClicksTwo + ' times.');
 },false);
