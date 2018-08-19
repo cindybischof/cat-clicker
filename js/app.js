@@ -13,6 +13,6 @@ imgOne.addEventListener('click', function(){
 let imgTwo = document.getElementById('img-two');
 imgTwo.addEventListener('click', function(){
   catClicksTwo++;
-  catOneCounter.innerText = catClicksTwo;
+  catTwoCounter.innerText = catClicksTwo;
   console.log('Second cat picture clicked ' + catClicksTwo + ' times.');
 },false);
