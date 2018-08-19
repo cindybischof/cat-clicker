@@ -1,12 +1,16 @@
-let catClicksOne;
-let catClicksTwo;
+let catClicksOne = 0;
+let catClicksTwo = 0;
+let catOneCounter = document.querySelector('.clicks-one');
+let catTwoCounter = document.querySelector('.clicks-two');
 
-$('#img-one').click(function(e){
+let imgOne = document.getElementById('img-one');
+imgOne.addEventListener('click', function(){
   catClicksOne++;
-  console.log(catClicksOne);
-});
+  console.log('Second cat picture clicked ' + catClicksOne + ' times.');
+},false);
 
-$('#img-two').click(function(e){
+let imgTwo = document.getElementById('img-two');
+imgTwo.addEventListener('click', function(){
   catClicksTwo++;
-  console.log(catClicksTwo);
-});
+  console.log('Second cat picture clicked ' + catClicksTwo + ' times.');
+},false);
